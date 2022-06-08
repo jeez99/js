@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsHTML</title>
+    <style>
+        #cuadrado {
+            width: 500px;
+            height: 100px;
+            background: papayawhip;
+            align-content: space-around;
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            border: 5px solid hotpink;
+            border-radius: 30px;
+            margin: 20px;
+        }
+        
+        #triangulo {
+            width: 500px;
+            height: 150px;
+            background: lightblue;
+            align-content: space-around;
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            border: 5px solid blue;
+            border-radius: 30px;
+            margin: 20px;
+        }
+        
+        #circulo {
+            width: 500px;
+            height: 100px;
+            background: lightpink;
+            align-content: space-around;
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+            border: 5px solid red;
+            border-radius: 30px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        figuras geometricas
+    </h1>
+    <header>
+        Taller 1
+    </header>
+    <section id="cuadrado">
+        <h2>calcular parametros cuadrado</h2>
+        <form action="">
+            <label for="ladoC">escribe el lado del cuadrado</label>
+            <input type="number" id="ladoC">
+            <button id="set" type="button" onclick="perimetroC()">
+                perimetro
+            </button>
+            <button id="refresh" type="button" onclick="areaC()">
+                area
+            </button>
+        </form>
+    </section>
+    <section id="triangulo">
+        <h2>calcular parametros triangulo isoceles</h2>
+        <form action="">
+            <label for="lado1" class="lado1">escribe lado 1 del triangulo</label>
+            <input type="number" id="lado1" class="lado1">
+            <label for="lado2" class="lado2">escribe lado 2 del triangulo</label>
+            <input type="number" id="lado2" class="lado2">
+            <label for="lado3" class="lado3">escribe lado 3 del triangulo</label>
+            <input type="number" id="lado3" class="lado3">
+            <button id="set" type="button" onclick="perimetroT()">
+                perimetro
+            </button>
+            <button id="refresh" type="button" onclick="areaT()">
+                area
+            </button>
+        </form>
+    </section>
+    <section id="circulo">
+        <h2>calcular parametros circulo</h2>
+        <form action="">
+            <label for="radioCir">escribe el radio del circulo</label>
+            <input type="number" id="radioCir">
+            <button id="set" type="button" onclick="perimetroCir()">
+                perimetro
+            </button>
+            <button id="refresh" type="button" onclick="areaCir()">
+                area
+            </button>
+        </form>
+    </section>
+    <script src="./jspractice1.js"></script>
+</body>
+
+</html>
